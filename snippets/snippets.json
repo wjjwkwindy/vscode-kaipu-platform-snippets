@@ -1,0 +1,113 @@
+{
+    "cmspro_website":{
+        "prefix":"cmspro_website",
+        "body":[
+            "<CMSPRO_WEBSITE FIELD='${1}'></CMSPRO_WEBSITE>"
+        ],
+        "description":"CMSPRO_WEBSITE"
+    },
+    "cmspro_channels":{
+        "prefix":"cmspro_channels",
+        "body":[
+            "<CMSPRO_CHANNELS CODE=\"\" CHILDLEVEL=\"1\" CHILDTYPE=\"0|1|2|3\" NUM=\"\" STARTPOS=\"0\"></CMSPRO_CHANNELS>"
+        ],
+        "description":"CMSPRO_CHANNELS"
+    },
+    "cmspro_channel":{
+        "prefix":"cmspro_channel",
+        "body":[
+            "<CMSPRO_CHANNEL CODE='' FIELD='${1}'></CMSPRO_CHANNEL>"
+        ],
+        "description":"CMSPRO_CHANNEL"
+    },
+    "cmspro_documents 普通":{
+        "prefix":"cmspro_documents",
+        "body":[
+            "<CMSPRO_DOCUMENTS CHANNELCODE=\"\" DOCUMENTTYPE=\"0|1|2|3|8|9\" NUM=\"${1}\" STARTPOS=\"0\"></CMSPRO_DOCUMENTS>"
+        ],
+        "description":"CMSPRO_DOCUMENTS 普通"
+    },
+    "cmspro_documents 分页":{
+        "prefix":"cmspro_documents",
+        "body":[
+            "<CMSPRO_DOCUMENTS CHANNELCODE=\"\" DOCUMENTTYPE=\"0|1|2|3|8|9\" NUM=\"1000\" STARTPOS=\"0\" PAGENAVIGATIONID=\"page-div\" PAGENAVIGATIONCLASS=\"\"></CMSPRO_DOCUMENTS>"
+        ],
+        "description":"CMSPRO_DOCUMENTS 分页"
+    },
+    "cmspro_appendixs":{
+        "prefix":"cmspro_appendixs",
+        "body":[
+            "<CMSPRO_APPENDIXS MODE=\"IMG\" NUM=\"1\" STARTPOS=\"0\"></CMSPRO_APPENDIXS>"
+        ],
+        "description":"CMSPRO_APPENDIXS"
+    },
+    "cmspro_appendix":{
+        "prefix":"cmspro_appendix",
+        "body":[
+            "<CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX>"
+        ],
+        "description":"CMSPRO_APPENDIX"
+    },
+    "cmspro_document 链接":{
+        "prefix":"cmspro_document url",
+        "body":[
+            "<CMSPRO_DOCUMENT FIELD='url'></CMSPRO_DOCUMENT>"
+        ],
+        "description":"CMSPRO_DOCUMENT 链接"
+    },
+    "cmspro_document 标题":{
+        "prefix":"cmspro_document title",
+        "body":[
+            "<CMSPRO_DOCUMENT FIELD=\"title\">文章标题</CMSPRO_DOCUMENT>"
+        ],
+        "description":"CMSPRO_DOCUMENT 标题"
+    },
+    "cmspro_document 文章内容":{
+        "prefix":"cmspro_document content",
+        "body":[
+            "<CMSPRO_DOCUMENT FIELD=\"content\">文章内容</CMSPRO_DOCUMENT>"
+        ],
+        "description":"CMSPRO_DOCUMENT 文章内容"
+    },
+    "cmspro_document 时间":{
+        "prefix":"cmspro_document publishedTime",
+        "body":[
+            "<CMSPRO_DOCUMENT FIELD=\"publishedTime\" DATEFORMAT=\"yyyy-MM-dd\">时间</CMSPRO_DOCUMENT>"
+        ],
+        "description":"CMSPRO_DOCUMENT 时间"
+    },
+    "cmspro_document 元数据":{
+        "prefix":"cmspro_document meta",
+        "body":[
+            "<CMSPRO_DOCUMENT FIELD=\"${1}\" DOMAINMETADATANAME=\"默认元数据集\">${2}</CMSPRO_DOCUMENT>"
+        ],
+        "description":"CMSPRO_DOCUMENT 元数据"
+    },
+    "cmspro_location":{
+        "prefix":"cmspro_location",
+        "body":[
+            "<CMSPRO_LOCATION LINK=\"&nbsp;&gt;&nbsp;\" SELFONLY=\"false\" AUTOLINK=\"true\" TARGET=\"_blank\" LINKEXTRA=\"\" HOMEPAGEDESC=\"首页\">当前位置</CMSPRO_LOCATION>"
+        ],
+        "description":"CMSPRO_LOCATION"
+    },
+    "include_header":{
+        "prefix":"include_header",
+        "body":[
+            "<!--header-->",
+            "<!--#include virtual=\"<CMSPRO_CHANNEL CODE='${1}' FIELD='url'></CMSPRO_CHANNEL>\"-->",
+            "<!--header end-->",
+            "<!-- main -->"
+        ],
+        "description":"include_header"
+    },
+    "include_footer":{
+        "prefix":"include_footer",
+        "body":[
+            "<!-- main end -->",
+            "<!--footer-->",
+            "<!--#include virtual=\"<CMSPRO_CHANNEL CODE='${1}' FIELD='url'></CMSPRO_CHANNEL>\"-->",
+            "<!--footer end-->"
+        ],
+        "description":"include_footer"
+    }
+}
