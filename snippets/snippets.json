@@ -9,28 +9,28 @@
     "cmspro_channels":{
         "prefix":"cmspro_channels",
         "body":[
-            "<CMSPRO_CHANNELS CODE=\"\" CHILDLEVEL=\"1\" CHILDTYPE=\"0|1|2|3\" NUM=\"\" STARTPOS=\"0\"></CMSPRO_CHANNELS>"
+            "<CMSPRO_CHANNELS CODE=\"\" CHILDLEVEL=\"1\" CHILDTYPE=\"0|1|2|3\" NUM=\"\" STARTPOS=\"0\">${1}</CMSPRO_CHANNELS>"
         ],
         "description":"CMSPRO_CHANNELS"
     },
     "cmspro_channel":{
         "prefix":"cmspro_channel",
         "body":[
-            "<CMSPRO_CHANNEL CODE='' FIELD='${1}'></CMSPRO_CHANNEL>"
+            "<CMSPRO_CHANNEL CODE=\"\" FIELD=\"${1}\"></CMSPRO_CHANNEL>"
         ],
         "description":"CMSPRO_CHANNEL"
     },
     "cmspro_documents 普通":{
         "prefix":"cmspro_documents",
         "body":[
-            "<CMSPRO_DOCUMENTS CHANNELCODE=\"\" DOCUMENTTYPE=\"0|1|2|3|8|9\" NUM=\"${1}\" STARTPOS=\"0\"></CMSPRO_DOCUMENTS>"
+            "<CMSPRO_DOCUMENTS CHANNELCODE=\"\" DOCUMENTTYPE=\"0|1|2|3|8|9\" NUM=\"${1}\" STARTPOS=\"0\">${2}</CMSPRO_DOCUMENTS>"
         ],
         "description":"CMSPRO_DOCUMENTS 普通"
     },
     "cmspro_documents 分页":{
         "prefix":"cmspro_documents",
         "body":[
-            "<CMSPRO_DOCUMENTS CHANNELCODE=\"\" DOCUMENTTYPE=\"0|1|2|3|8|9\" NUM=\"1000\" STARTPOS=\"0\" PAGENAVIGATIONID=\"page-div\" PAGENAVIGATIONCLASS=\"\"></CMSPRO_DOCUMENTS>"
+            "<CMSPRO_DOCUMENTS CHANNELCODE=\"\" DOCUMENTTYPE=\"0|1|2|3|8|9\" NUM=\"1000\" PAGESIZE=\"${1}\" STARTPOS=\"0\" PAGENAVIGATIONID=\"page-div\" PAGENAVIGATIONCLASS=\"\">${2}</CMSPRO_DOCUMENTS>"
         ],
         "description":"CMSPRO_DOCUMENTS 分页"
     },
@@ -69,10 +69,17 @@
         ],
         "description":"CMSPRO_DOCUMENT 文章内容"
     },
-    "cmspro_document 时间":{
+    "cmspro_document 日期+时间（24小时制）":{
         "prefix":"cmspro_document publishedTime",
         "body":[
-            "<CMSPRO_DOCUMENT FIELD=\"publishedTime\" DATEFORMAT=\"yyyy-MM-dd\">时间</CMSPRO_DOCUMENT>"
+            "<CMSPRO_DOCUMENT FIELD=\"publishedTime\" DATEFORMAT=\"yyyy-MM-dd HH:mm\">日期+时间</CMSPRO_DOCUMENT>"
+        ],
+        "description":"CMSPRO_DOCUMENT 日期+时间（24小时制）"
+    },
+    "cmspro_document 日期":{
+        "prefix":"cmspro_document publishedTime",
+        "body":[
+            "<CMSPRO_DOCUMENT FIELD=\"publishedTime\" DATEFORMAT=\"yyyy-MM-dd\">日期</CMSPRO_DOCUMENT>"
         ],
         "description":"CMSPRO_DOCUMENT 时间"
     },
