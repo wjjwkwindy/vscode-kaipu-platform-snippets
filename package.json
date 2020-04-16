@@ -3,7 +3,7 @@
     "publisher": "WangJunJie",
     "displayName": "vscode-kaipu-platform-snippets",
     "description": "开普集约化平台代码提示",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.39.0"
     },
