@@ -16,7 +16,7 @@
     "cmspro_channel":{
         "prefix":"cmspro_channel",
         "body":[
-            "<CMSPRO_CHANNEL CODE=\"\" FIELD=\"${1}\"></CMSPRO_CHANNEL>"
+            "<CMSPRO_CHANNEL CODE='' FIELD='${1}'>${2}</CMSPRO_CHANNEL>"
         ],
         "description":"CMSPRO_CHANNEL"
     },
@@ -37,7 +37,7 @@
     "cmspro_appendixs":{
         "prefix":"cmspro_appendixs",
         "body":[
-            "<CMSPRO_APPENDIXS MODE=\"IMG\" NUM=\"1\" STARTPOS=\"0\"></CMSPRO_APPENDIXS>"
+            "<CMSPRO_APPENDIXS MODE=\"IMG\" NUM=\"1\" STARTPOS=\"0\">${1}</CMSPRO_APPENDIXS>"
         ],
         "description":"CMSPRO_APPENDIXS"
     },
