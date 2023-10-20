@@ -37,7 +37,9 @@
     "cmspro_appendixs":{
         "prefix":"cmspro_appendixs",
         "body":[
-            "<CMSPRO_APPENDIXS MODE=\"IMG\" NUM=\"1\" STARTPOS=\"0\">${1}</CMSPRO_APPENDIXS>"
+            "<CMSPRO_APPENDIXS MODE=\"IMG\" NUM=\"1\" STARTPOS=\"0\"",
+            "  <img src=\"<CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX>\">",
+            "</CMSPRO_APPENDIXS>"
         ],
         "description":"CMSPRO_APPENDIXS"
     },
@@ -96,6 +98,15 @@
             "<CMSPRO_LOCATION LINK=\"&nbsp;&gt;&nbsp;\" SELFONLY=\"false\" AUTOLINK=\"true\" TARGET=\"_blank\" LINKEXTRA=\"\" HOMEPAGEDESC=\"首页\">当前位置</CMSPRO_LOCATION>"
         ],
         "description":"CMSPRO_LOCATION"
+    },
+    "cmspro_include":{
+        "prefix":"include",
+        "body":[
+            "<!---->",
+            "<!--#include virtual=\"<CMSPRO_CHANNEL CODE='${1}' FIELD='url'></CMSPRO_CHANNEL>\"-->",
+            "<!-- end-->"
+        ],
+        "description":"include_header"
     },
     "include_header":{
         "prefix":"include_header",
