@@ -3,7 +3,7 @@
     "publisher": "co2oc",
     "displayName": "vscode kaipu platform snippets",
     "description": "集约化平台代码提示",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "engines": {
         "vscode": "^1.39.0"
     },
