@@ -1,6 +1,6 @@
 # Kaipu Platform Snippets for VS Code
 
-开普集约化平台代码补全插件。
+集约化平台代码补全插件。
 
 ## 使用方法
 

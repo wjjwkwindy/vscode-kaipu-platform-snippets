@@ -1,8 +1,8 @@
 {
     "name": "vscode-kaipu-platform-snippets",
-    "publisher": "WangJunJie",
-    "displayName": "vscode-kaipu-platform-snippets",
-    "description": "开普集约化平台代码提示",
+    "publisher": "co2oc",
+    "displayName": "vscode kaipu platform snippets",
+    "description": "集约化平台代码提示",
     "version": "1.0.3",
     "engines": {
         "vscode": "^1.39.0"
@@ -10,6 +10,14 @@
     "categories": [
         "Snippets"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wjjwkwindy/vscode-kaipu-platform-snippets.git"
+    },
+    "icon": "icon.png",
+    "scripts": {
+        "build": "vsce package"
+    },
     "contributes": {
         "snippets": [
             {
