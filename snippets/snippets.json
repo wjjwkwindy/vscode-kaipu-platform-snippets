@@ -13,10 +13,17 @@
         ],
         "description":"CMSPRO_CHANNELS"
     },
-    "cmspro_channel":{
-        "prefix":"cmspro_channel",
+    "cmspro 栏目链接":{
+        "prefix":"cmspro_channel_url",
         "body":[
-            "<CMSPRO_CHANNEL CODE='' FIELD='${1}'>${2}</CMSPRO_CHANNEL>"
+            "<CMSPRO_CHANNEL CODE='' FIELD='url'>${1}</CMSPRO_CHANNEL>"
+        ],
+        "description":"CMSPRO_CHANNEL"
+    },
+    "cmspro_channel channelName":{
+        "prefix":"cmspro_channel_channelName",
+        "body":[
+            "<CMSPRO_CHANNEL CODE='' FIELD='channelName'>${1}</CMSPRO_CHANNEL>"
         ],
         "description":"CMSPRO_CHANNEL"
     },
@@ -37,8 +44,8 @@
     "cmspro_appendixs":{
         "prefix":"cmspro_appendixs",
         "body":[
-            "<CMSPRO_APPENDIXS MODE=\"IMG\" NUM=\"1\" STARTPOS=\"0\"",
-            "  <img src=\"<CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX>\">",
+            "<CMSPRO_APPENDIXS MODE=\"IMG\" NUM=\"1\" STARTPOS=\"0\">",
+            "  <img src=\"<CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX>\" alt=\"\" />",
             "</CMSPRO_APPENDIXS>"
         ],
         "description":"CMSPRO_APPENDIXS"
@@ -50,7 +57,7 @@
         ],
         "description":"CMSPRO_APPENDIX"
     },
-    "cmspro_document 链接":{
+    "cmspro 文章链接":{
         "prefix":"cmspro_document url",
         "body":[
             "<CMSPRO_DOCUMENT FIELD='url'></CMSPRO_DOCUMENT>"
