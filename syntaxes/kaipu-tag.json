@@ -1,0 +1,57 @@
+{
+  "scopeName": "kaipu-tag.injection",
+  "injectionSelector": "L:text.html.derivative",
+  "patterns": [
+      {
+          "include": "text.html.basic#comment"
+      },
+      {
+          "include": "#kaipu-tag"
+      }
+  ],
+  "repository": {
+      "kaipu-tag": {
+          "begin": "(?i)(<)(CMSPRO_DOCUMENTS|CMSPRO_DOCUMENT|CMSPRO_WEBSITE|CMSPRO_CHANNEL|CMSPRO_CHANNELS|CMSPRO_APPENDIX|CMSPRO_APPENDIXS|CMSPRO_RELDOCUMENTS|CMSPRO_LOCATION|CMSPRO_ROWNO)\\b",
+          "beginCaptures": {
+              "1": {
+                  "name": "entity.name.tag.html.kaipu.tag"
+              },
+              "2": {
+                  "name": "entity.name.tag.html.kaipu.tag"
+              },
+              "3": {
+                  "name": "entity.name.tag.html.kaipu.tag"
+              }
+          },
+          "end": "(</)(\\2)(>)",
+          "endCaptures": {
+              "1": {
+                  "name": "entity.name.tag.html.kaipu.tag"
+              },
+              "2": {
+                  "name": "entity.name.tag.html.kaipu.tag"
+              },
+              "3": {
+                  "name": "entity.name.tag.html.kaipu.tag"
+              }
+          },
+          "patterns": [
+              {
+                  "include": "#tag-stuff"
+              },
+              {
+                  "include": "text.html.derivative"
+              }
+          ]
+      },
+      "tag-stuff": {
+          "begin": "\\G",
+          "end": "(?=/>)|(>)",
+          "patterns": [
+              {
+                  "include": "text.html.basic#attribute"
+              }
+          ]
+      }
+  }
+}

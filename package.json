@@ -5,7 +5,7 @@
     "description": "集约化平台代码提示",
     "version": "1.0.4",
     "engines": {
-        "vscode": "^1.39.0"
+        "vscode": "^1.85.0"
     },
     "categories": [
         "Snippets"
@@ -15,15 +15,47 @@
         "url": "https://github.com/wjjwkwindy/vscode-kaipu-platform-snippets.git"
     },
     "icon": "icon.png",
-    "scripts": {
-        "build": "vsce package"
-    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "onStartupFinished"
+    ],
     "contributes": {
         "snippets": [
             {
                 "language": "html",
                 "path": "./snippets/snippets.json"
             }
-        ]
-    }
+        ],
+        "grammars": [
+            {
+                "path": "./syntaxes/kaipu-tag.json",
+                "scopeName": "kaipu-tag.injection",
+                "injectTo": [
+                    "text.html.derivative"
+                ],
+                "embeddedLanguages": {
+                    "text.html.derivative": "html"
+                }
+            }
+        ],
+        "commands": [{
+            "command": "inject-tag-highlight-to-setting.kaipu",
+            "title": "Kaipu: Inject Tag Highlight To Setting"
+          }]
+    },
+    "scripts": {
+        "build": "vsce package",
+        "lint": "eslint .",
+        "pretest": "pnpm run lint",
+        "test": "vscode-test"
+    },
+      "devDependencies": {
+        "@types/vscode": "^1.85.0",
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "eslint": "^8.56.0",
+        "typescript": "^5.3.3",
+        "@vscode/test-cli": "^0.0.4",
+        "@vscode/test-electron": "^2.3.8"
+      }
 }
