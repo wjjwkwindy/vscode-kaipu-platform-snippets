@@ -1,6 +1,6 @@
 # Kaipu Platform Snippets for VS Code
 
-集约化平台代码补全、高亮插件。 
+集约化平台代码补全、高亮插件。 [安装地址](https://marketplace.visualstudio.com/items?itemName=co2oc.vscode-kaipu-platform-snippets)
 
 直接输入集约化平台标签就会产生提示。
 
