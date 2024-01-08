@@ -50,7 +50,20 @@
                 "kaipu.injectTagHighlightToSetting": {
                     "type": "boolean",
                     "default": true,
-                    "description": "控制是否启用标签高亮"
+                    "description": "控制是否启用标签高亮",
+                    "order": 1
+                },
+                "kaipu.injectTagHighlightForeground":{
+                    "type": "string",
+                    "default": "#53aee2",
+                    "description": "控制标签高亮颜色",
+                    "order": 2
+                },
+                "kaipu.injectTagHighlightFontStyle":{
+                    "type": "string",
+                    "default": "italic underline",
+                    "description": "控制标签高亮样式，支持 'italic' (斜体)、'bold' (粗体)、'underline' (下划线)、'strikethrough' (删除线) ，可互相组合，使用空格隔开",
+                    "order": 3
                 }
             }
         }
