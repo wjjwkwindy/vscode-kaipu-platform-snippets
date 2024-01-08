@@ -3,7 +3,7 @@
     "publisher": "co2oc",
     "displayName": "vscode kaipu platform snippets",
     "description": "集约化平台代码提示",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "engines": {
         "vscode": "^1.70.0"
     },
@@ -53,13 +53,13 @@
                     "description": "控制是否启用标签高亮",
                     "order": 1
                 },
-                "kaipu.injectTagHighlightForeground":{
+                "kaipu.injectTagHighlightForeground": {
                     "type": "string",
                     "default": "#53aee2",
                     "description": "控制标签高亮颜色",
                     "order": 2
                 },
-                "kaipu.injectTagHighlightFontStyle":{
+                "kaipu.injectTagHighlightFontStyle": {
                     "type": "string",
                     "default": "italic underline",
                     "description": "控制标签高亮样式，支持 'italic' (斜体)、'bold' (粗体)、'underline' (下划线)、'strikethrough' (删除线) ，可互相组合，使用空格隔开",
