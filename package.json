@@ -43,7 +43,17 @@
                 "command": "inject-tag-highlight-to-setting.kaipu",
                 "title": "Kaipu: Inject Tag Highlight To Setting"
             }
-        ]
+        ],
+        "configuration":{
+            "title": "Kaipu Platform Snippets",
+            "properties": {
+                "kaipu.injectTagHighlightToSetting": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "控制是否启用标签高亮"
+                }
+            }
+        }
     },
     "scripts": {
         "build": "vsce package",
