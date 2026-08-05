@@ -13,17 +13,24 @@
         ],
         "description":"CMSPRO_CHANNELS"
     },
-    "cmspro 栏目链接":{
+    "cmspro_channel 栏目链接":{
         "prefix":"cmspro_channel_url",
         "body":[
             "<CMSPRO_CHANNEL CODE='' FIELD='url'>${1}</CMSPRO_CHANNEL>"
         ],
         "description":"CMSPRO_CHANNEL"
     },
-    "cmspro_channel channelName":{
+    "cmspro_channel 栏目名":{
         "prefix":"cmspro_channel_channelName",
         "body":[
             "<CMSPRO_CHANNEL CODE='' FIELD='channelName'>${1}</CMSPRO_CHANNEL>"
+        ],
+        "description":"CMSPRO_CHANNEL"
+    },
+    "cmspro_channel 栏目logo":{
+        "prefix":"cmspro_channel_logo",
+        "body":[
+            "<img src=\"<CMSPRO_CHANNEL LOGOINDEX='0'></CMSPRO_CHANNEL>\" alt=\"\"/>"
         ],
         "description":"CMSPRO_CHANNEL"
     },
@@ -67,7 +74,7 @@
     "cmspro_document 标题":{
         "prefix":"cmspro_document title",
         "body":[
-            "<CMSPRO_DOCUMENT FIELD=\"title\">文章标题</CMSPRO_DOCUMENT>"
+            "<CMSPRO_DOCUMENT FIELD='title' NUM='200'>文章标题</CMSPRO_DOCUMENT>"
         ],
         "description":"CMSPRO_DOCUMENT 标题"
     },
